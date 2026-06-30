@@ -1,0 +1,14 @@
+{
+    "total_karvands": 2,
+    "total_skills": 3,
+    "average_skill_score": 77.67,
+    "cities": [
+        "abadan",
+        "shiraz"
+    ],
+    "unique_skills": [
+        "numpy",
+        "pandas",
+        "python"
+    ]
+}

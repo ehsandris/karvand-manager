@@ -5,30 +5,8 @@
     },
     "karvands": [
         {
-            "id": 1,
-            "full_name": "ali ahmadi",
-            "email": "ali@gmail.com",
-            "city": "tehran",
-            "education": {
-                "degree": "bachelor",
-                "field": "computer engineering"
-            },
-            "skills": [
-                {
-                    "name": "python",
-                    "level": "advanced",
-                    "score": 95
-                },
-                {
-                    "name": "git",
-                    "level": "intermediate",
-                    "score": 80
-                }
-            ]
-        },
-        {
             "id": 2,
-            "full_name": "sara mohammadi",
+            "full_name": "abbas mohammadi",
             "email": "sara@gmail.com",
             "city": "shiraz",
             "education": {
@@ -45,6 +23,23 @@
                     "name": "numpy",
                     "level": "intermediate",
                     "score": 85
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "full_name": "ehsan",
+            "email": "ehsan@gmail.com",
+            "city": "abadan",
+            "education": {
+                "degree": "bachelor",
+                "field": "ai engineering"
+            },
+            "skills": [
+                {
+                    "name": "python",
+                    "level": "intermediate",
+                    "score": 50
                 }
             ]
         }
