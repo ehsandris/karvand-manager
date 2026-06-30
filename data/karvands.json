@@ -1,0 +1,52 @@
+{
+    "bootcamp": {
+        "title": "AI-Bootcamp",
+        "year": "2026"
+    },
+    "karvands": [
+        {
+            "id": 1,
+            "full_name": "ali ahmadi",
+            "email": "ali@gmail.com",
+            "city": "tehran",
+            "education": {
+                "degree": "bachelor",
+                "field": "computer engineering"
+            },
+            "skills": [
+                {
+                    "name": "python",
+                    "level": "advanced",
+                    "score": 95
+                },
+                {
+                    "name": "git",
+                    "level": "intermediate",
+                    "score": 80
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "full_name": "sara mohammadi",
+            "email": "sara@gmail.com",
+            "city": "shiraz",
+            "education": {
+                "degree": "master",
+                "field": "data science"
+            },
+            "skills": [
+                {
+                    "name": "pandas",
+                    "level": "advanced",
+                    "score": 98
+                },
+                {
+                    "name": "numpy",
+                    "level": "intermediate",
+                    "score": 85
+                }
+            ]
+        }
+    ]
+}
