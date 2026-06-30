@@ -128,6 +128,71 @@ Skills
 
 
 
+def search_applicant_by_id():
+    data = load_data()
+    applicant_id = get_number("Enter applicant id : ")
+
+    for applicant in data["karvands"]:
+        count = 1
+        if applicant_id == applicant["id"]:
+            print(f"""
+----------------------------------------
+ID: {applicant["id"]}
+Name: {applicant["full_name"]}
+Email: {applicant["email"]}
+City: {applicant["city"]}
+
+Education
+----------
+Degree : {applicant["education"]["degree"]}
+Field  : {applicant["education"]["field"]}
+
+Skills
+------
+""")
+            for skill in applicant["skills"]:
+                
+                print(f'{count}. {skill["name"]} ({skill["level"]} - Score: {skill["score"]})')
+                count +=1
+            print("-" * 40)
+            
+            return
+
+    print("Appllicant not found .")
+
+
+def search_applicant_by_skill():
+    data = load_data()
+    applicant_skill = input("Enter skill : ").strip().lower()
+    found = False
+    
+    for applicant in data["karvands"]:
+        count = 1
+        for skill in applicant["skills"]:
+            if skill["name"] == applicant_skill :
+                found = True
+                print(f"""
+----------------------------------------
+ID: {applicant["id"]}
+Name: {applicant["full_name"]}
+Email: {applicant["email"]}
+City: {applicant["city"]}
+
+Education
+----------
+Degree : {applicant["education"]["degree"]}
+Field  : {applicant["education"]["field"]}
+""")
+                for skill in applicant["skills"]:
+                
+                    print(f'{count}. {skill["name"]} ({skill["level"]} - Score: {skill["score"]})')
+                    count +=1
+                print("-" * 40)
+                break
+    if not found:
+        print("Applicant not found.")
+
+
 def main():
     initialize_data()
 
@@ -149,18 +214,16 @@ def main():
         choice = input("Choose an option: ").strip()
 
         if choice == "1":
-             add_applicant()
+            add_applicant()
              
         elif choice == "2":
-             show_applicants()
+            show_applicants()
         
         elif choice == "3":
-            pass
-             #search_applicant_by_id()
+            search_applicant_by_id()
         
         elif choice == "4":
-            pass
-             #search_applicant_by_skill()
+            search_applicant_by_skill()
         
         elif choice == "5":
             pass
